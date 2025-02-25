@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper,
+        .wrapper2 {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px auto;
+            width: 80%;
+            height: 400px;
+            border: 1px solid green;
+            overflow: auto;
+        }
+
+        .wrapper2 {
+            flex-direction: column;
+        }
+
+        .wrapper div,
+        .wrapper2 div {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid red;
+            margin: 10px;
+        }
+
+        .wrapper2 div {
+            height: auto;
+            display: flex;
+            align-self: flex-end;
+        }
+
+        .wrapper3,
+        .wrapper4 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .wrapper4 {
+            justify-content: flex-start;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+
+        ul>li {
+            width: 150px;
+            height: 45px;
+            border: 1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul.wrapper4>li:first-child {
+            flex: 1 0 auto;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .wrapper4 ul {
+            width: 100%;
+        }
+
+        /*.wrapper div:nth-child(4) {
+            order: -1;
+        }
+
+        .wrapper div:nth-child(1) {
+            order: 0;
+        }
+
+        .wrapper div:nth-child(2) {
+            order: 1;
+        }
+
+        .wrapper div:nth-child(3) {  
+            order: 2;
+        } */
+    </style>
+    <!-- <link href="./css/style.css" rel="stylesheet"> -->
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium minus ipsa unde pariatur sed deserunt
+            alias, corrupti voluptas cum perspiciatis delectus eaque dolores saepe temporibus id, aut praesentium veniam
+            voluptatibus?
+        </div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta libero dicta consequatur nesciunt vero
+            corporis saepe fugiat nobis eaque deleniti? Reprehenderit eum dolor sit eos natus laborum, facere
+            praesentium excepturi.
+        </div>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam fuga et alias. Ratione, doloribus
+            doloremque aperiam, temporibus, natus asperiores ipsam sunt perferendis officia tempore aut totam earum vero
+            quia! Saepe.
+        </div>
+        <div>Lorem ipsum dolor sit amet.
+        </div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto optio odio molestiae dicta recusandae
+            natus deserunt aut sed perspiciatis voluptas autem sint laudantium, iusto quia corrupti delectus.
+            Repudiandae, earum pariatur.
+        </div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing.
+        </div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, explicabo quas! Praesentium saepe
+            magnam sit. Minima cum, nostrum repellendus expedita mollitia sapiente labore, recusandae, ducimus fuga quam
+            ex odit tenetur!
+            Voluptatum modi voluptas, itaque veritatis, fuga non doloremque illo excepturi fugiat explicabo vel
+            voluptate deleniti quae vero accusantium facere alias nemo! Fuga tempora quaerat sunt officiis nisi
+            repellendus ullam dignissimos.
+            Unde laborum accusantium sint necessitatibus, quasi dolorem at, similique, nisi placeat odio sapiente velit
+            repellat quibusdam sed alias a ea dignissimos voluptas quis vero dolores recusandae rem molestiae amet!
+            Exercitationem.
+        </div>
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, architecto?
+        </div>
+    </div>
+    <div class="wrapper2">
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium minus ipsa unde pariatur sed deserunt
+            alias, corrupti voluptas cum perspiciatis delectus eaque dolores saepe temporibus id, aut praesentium veniam
+            voluptatibus?
+        </div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta libero dicta consequatur nesciunt vero
+            corporis saepe fugiat nobis eaque deleniti? Reprehenderit eum dolor sit eos natus laborum, facere
+            praesentium excepturi.
+        </div>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam fuga et alias. Ratione, doloribus
+            doloremque aperiam, temporibus, natus asperiores ipsam sunt perferendis officia tempore aut totam earum vero
+            quia! Saepe.
+        </div>
+        <div>Lorem ipsum dolor sit amet.
+        </div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto optio odio molestiae dicta recusandae
+            natus deserunt aut sed perspiciatis voluptas autem sint laudantium, iusto quia corrupti delectus.
+            Repudiandae, earum pariatur.
+        </div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing.
+        </div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, explicabo quas! Praesentium saepe
+            magnam sit. Minima cum, nostrum repellendus expedita mollitia sapiente labore, recusandae, ducimus fuga quam
+            ex odit tenetur!
+        </div>
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, architecto?
+        </div>
+    </div>
+
+    <div class="wrapper3">
+        <div class="leftSide">Lorem, ipsum.</div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
+    </div>
+
+    <ul class="wrapper4">
+        <li>Lorem, ipsum dolor.</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
