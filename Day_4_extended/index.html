@@ -4,11 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;400;500;700;900&display=swap"
+        rel="stylesheet">
     <title>Document</title>
     <style>
-        /* h1 {
-            color: red;
-        } */
+        h1 {
+            border: 1px solid green;
+        }
+
+        :root {
+            font-size: 18px;
+        }
+
         /* #heading1.headingOne {
             color: violet;
         }
@@ -29,7 +40,7 @@
             color: red;
         } */
 
-        [data-custom] {
+        /* [data-custom] {
             color: red;
             background-color: grey;
             font-family: Arial, Helvetica, sans-serif;
@@ -47,7 +58,86 @@
             color: aquamarine;
         }
 
-        * {}
+        div h1 {
+            background-color: chartreuse;
+        } */
+
+        /* div header h1 {
+            background-color: peru;
+        }
+
+        header,
+        main {
+            background-color: bisque;
+        }
+
+        header+main {
+            background-color: red;
+        } */
+
+        /* header:has(h1) {
+            background-color: red;
+        }
+
+        h1:first-child {
+            background-color: green;
+        } */
+
+        /* h1:last-child {
+            background-color: blue;
+        }
+
+        h1:nth-child(2n) {
+            background-color: green;
+        } */
+
+        /* h1:nth-child(even) {
+            background-color: red;
+        } */
+
+        /* h1:hover {
+            border: 1px solid red;
+        } */
+
+        /* h1:not(.green) {
+            background-color: red;
+        } */
+
+        h1:empty {
+            background-color: blue;
+        }
+
+        input:checked+label {
+            background-color: green;
+        }
+
+        a {
+            padding: 20px;
+        }
+
+        a:visited {
+            color: yellow;
+        }
+
+        a:hover {
+            color: grey;
+        }
+
+        input:disabled+label {
+            background-color: grey;
+        }
+
+        input:focus {
+            outline-color: red;
+        }
+
+        p {
+            font-size: 2em;
+        }
+
+        /* * {
+            color: brown;
+        } */
 
         /* h1 {
             color: green;
@@ -57,12 +147,39 @@
 </head>
 
 <body>
+    <span class="material-icons">
+        shopping_cart
+    </span>
+    <a href="https://dev.to/sachinchaurasiya/how-web-worker-works-with-a-practical-example-c98">Google</a>
 
     <h1 id="heading2" class="headingOne" data-custom="heading">Hello World!!!</h1>
     <h1 id="heading1" class="headingOne green" data-custom="heading3">Hello World!!!</h1>
+    <h1></h1>
     <h1 id="heading3" class="headingOne" data-custom="heading2">Hello World!!!</h1>
     <h1 id="heading4" class="headingOne" data-custom="data-heading1">Hello World!!!</h1>
     <h1 id="heading5" class="headingOne" data-custom="title">Hello World!!!</h1>
+
+    <input type="radio" value="off" name="radio" id="radio" disabled>
+    <label for="radio">Off</label>
+    <br />
+    <input type="radio" value="on" name="radio" id="on">
+    <label for="on">On</label>
+    <br />
+    <input type="checkbox" value="off" id="check">
+    <label for="check">Off</label>
+    <input type="text">
+    <p>sdfdsfs</p>
+    <div style="font-size: 20px;">
+        <h1>sdfdsf</h1>
+        <p>sdfdsfs</p>
+        <header>dsfdsfdsfs
+            <h1>sdfdsfs</h1>
+        </header>
+        <main>sdfsfddsf</main>
+        <h1>sdfsdf</h1>
+        <header>dfdsfdsf</header>
+        <main>sdfsdffsdf</main>
+    </div>
     <script src="./js/script.js"></script>
 </body>
 
