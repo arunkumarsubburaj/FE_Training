@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box-size {
+            padding: 20px;
+            margin: 20px;
+            background-color: violet;
+            font-size: 2rem;
+            /* transition: padding .25s; */
+            transition-property: all;
+            transition-duration: 0.75s;
+        }
+
+        .box-size:hover {
+            padding: 50px;
+            font-size: 1rem;
+        }
+
+        .ball,
+        .ball2 {
+            width: 50px;
+            height: 50px;
+            background-color: rgba(255, 0, 0, 0.8);
+            border-radius: 50%;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .ball:hover {
+            animation: jump2 .5s;
+            animation-iteration-count: infinite;
+        }
+
+        .ball2:hover {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes jump {
+            from {
+                top: 0;
+            }
+
+            to {
+                top: 50px;
+            }
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            20%,
+            80% {
+                opacity: 0.8;
+            }
+
+            40%,
+            60% {
+                opacity: 0.6;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+        }
+
+        @keyframes jump2 {
+
+            0%,
+            100% {
+                top: 0;
+                width: 50px;
+                height: 50px;
+            }
+
+            25%,
+            75% {
+                top: 25px;
+                width: 100px;
+                height: 100px;
+            }
+
+            50% {
+                top: 50px;
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+        /* .requiredSign {
+            transition: top .25s;
+            position: relative;
+            top: 0;
+        }
+
+        .box-size .requiredSign:hover {
+            top: -20px;
+        } */
+    </style>
+    <!-- <link href="./css/style.css" rel="stylesheet"> -->
+</head>
+
+<body>
+    <div class="box-size">Lorem ipsum dolor sit amet. <span class="requiredSign">*</span></div>
+    <div class="ball"></div>
+    <div class="ball2"></div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
