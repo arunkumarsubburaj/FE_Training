@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box-size {
+            padding: 20px;
+            margin: 20px auto;
+            background-color: violet;
+            width: 420px;
+            height: 65px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 950px) {
+            .box-size {
+                width: 650px;
+                background-color: blue;
+            }
+        }
+
+        @media screen and (min-width:1024px) {
+            .box-size {
+                width: 1000px;
+                height: 100px;
+            }
+        }
+    </style>
+    <!-- <link href="./css/style.css" rel="stylesheet"> -->
+</head>
+
+<body>
+    <div class="box-size"></div>
+    <img src="https://placehold.co/1200x900" />
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
