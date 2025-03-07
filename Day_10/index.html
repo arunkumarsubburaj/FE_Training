@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>Material UI: React components that implement Material Design</title>
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li> <a href="#" class="logoIcon"><span class="material-icons">
+                                shop
+                            </span></a> </li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Docs</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="actionIcons">
+                <div class="searchWrapper">
+                    <span class="searchIcon"></span>
+                    <input type="text" placeholder="Search...">
+                    <span class="shortcut">ctrl+K</span>
+                </div>
+                <button class="search iconBtn">
+                    <span class="material-icons">
+                        search
+                    </span>
+                </button>
+                <button class="github iconBtn">
+                    <span class="material-icons">
+                        settings
+                    </span>
+                </button>
+                <button class="theme iconBtn">
+                    <span class="material-icons">
+                        light_mode
+                    </span>
+                </button>
+                <button class="menu iconBtn">
+                    <span class="material-icons">
+                        drag_handle
+                    </span>
+                </button>
+            </div>
+        </header>
+        <main>
+            <div class="heroContainer">
+                <div class="breadcrumb">
+                    <div class="logo"></div>
+                    <p><span class="active">MIUI Core</span> <span class="grayColor">/</span> Material UI</p>
+                </div>
+                <p class="mainTitle">
+                    Ready to use <br />
+                    <span class="active dark">Material Design </span> <br />
+                    Components
+                </p>
+                <p class="desc">
+                    Material UI is an open-source React component library that implements Google's Material Design. It's
+                    comprehensive and can be used in production out of the box.
+                </p>
+                <div class="footerBtns">
+                    <button class="getStarted btn">Get Started > </button>
+                    <button class="viewTemplate btn">View Template ></button>
+                </div>
+                <p class="command">$ npm install @mui/material @emotion/react @emotion/styled</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

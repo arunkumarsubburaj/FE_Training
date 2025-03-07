@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f1214;
+    color: white;
+    font-family: poppins;
+}
+
+header {
+    background-color: #0f1114;
+    border-bottom: 1px solid #3c3c3c;
+    height: 60px;
+    padding: 0 16px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li:not(:first-child) {
+    display: none;
+}
+
+.searchWrapper {
+    display: none;
+}
+
+button.iconBtn {
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    background-color: #15171b;
+    border: 1px solid #15171b;
+    color: #3399ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.actionIcons {
+    display: flex;
+    gap: 6px;
+}
+
+a.logoIcon {
+    color: #3399ff;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.heroContainer {
+    text-align: center;
+    padding: 64px 16px 0 16px;
+}
+
+.breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.breadcrumb .active,
+p.mainTitle .active {
+    color: #66b2ff;
+}
+
+span.grayColor {
+    color: #313131;
+    font-weight: normal;
+    margin: 0 5px;
+}
+
+p.mainTitle {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+p.desc {
+    margin: 16px 0 24px 0;
+    font-size: 14px;
+    color: #b6bec9;
+}
+
+
+.footerBtns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footerBtns button.btn {
+    height: 45px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+}
+
+.footerBtns button.btn.getStarted {
+    background-color: #0073e6;
+}
+
+.footerBtns button.btn.viewTemplate {
+    background-color: #121518;
+    border-color: #2f2f2f;
+}
+
+p.command {
+    font-size: 12px;
+    margin-top: 16px;
+    color: #98a4b3;
+    font-family: monospace;
+}
