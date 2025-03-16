@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>Material UI: React components that implement Material Design</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <!-- <style>
+        li:hover {
+            color: red;
+        }
+    </style> -->
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+
+    <input type="text" id="formEle" />
+
+    <button id="modalTarget" class="btn" onclick="showModal()">Target</button>
+
+    <!-- Modal component-->
+    <div class="overlay">
+        <div class="modalContainer">
+            <header>
+                <h3>This is the Title</h3>
+                <div class="closeIconWrapper" onclick="closeModal()">
+                    <span class="material-icons">
+                        close
+                    </span>
+                </div>
+            </header>
+            <main>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla saepe, blanditiis molestiae sint
+                    quasi sit ad reprehenderit. Doloribus aliquam dicta rem adipisci suscipit consequuntur maxime,
+                    temporibus aperiam, mollitia voluptatem magnam.
+                </p>
+                <p>Laborum, inventore fugiat eligendi repellendus accusamus minus beatae unde officiis autem
+                    consequuntur nemo eveniet, illum sunt corporis. Temporibus perferendis harum rem, voluptates
+                    libero
+                    quis accusamus soluta cupiditate maiores qui explicabo.
+                </p>
+                <p>Et cumque vero officia at. Reprehenderit reiciendis voluptate quasi vero. Reprehenderit dolores
+                    deserunt distinctio quo possimus corrupti magni harum assumenda repellat, itaque eius, et,
+                    ratione
+                    quasi. Aliquam dolore incidunt excepturi.
+                </p>
+            </main>
+            <footer>
+                <button class="btn saveBtn" onclick="modalSaveClicked()">Save</button>
+                <button class="btn cancelBtn" onclick="closeModal()">Cancel</button>
+            </footer>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
