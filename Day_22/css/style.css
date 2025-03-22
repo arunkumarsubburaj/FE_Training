@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+:root {
+    --link-color: #b6bec9;
+    --buttonColor: #3399ff;
+    --bgColor: #15171b;
+}
