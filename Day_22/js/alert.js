@@ -1,18 +1,18 @@
 class Alert extends HTMLElement {
     constructor() {
         super();
+        this.shadowRoot = this.attachShadow({ mode: "open" });
     }
-    static observedAttributes = ["type", "variant"];
+    static observedAttributes = ["type", "variant", "class"];
     shadowRoot = null;
     initialize() {
-        this.shadowRoot = this.attachShadow({ mode: "open" });
         this.createAlert();
         this.registerEvents();
     }
     registerEvents() {
         const closeIcon = this.shadowRoot.querySelector(".alertCloseIcon");
-        closeIcon.addEventListener("click", () => {
-            this.alertCloseClick();
+        closeIcon.addEventListener("click", (event) => {
+            this.alertCloseClick(event);
         });
     }
     destroy() {
@@ -51,7 +51,7 @@ class Alert extends HTMLElement {
                 }
                 .success {
                     color: green;
-                }
+                    }
                 .error {
                     color: red;
                 }
@@ -91,9 +91,9 @@ class Alert extends HTMLElement {
         `;
     }
 
-    alertCloseClick() {
+    alertCloseClick(event) {
         console.log("alert close clicked");
-        const customEvent = new CustomEvent("alertclosed", {
+        const customEvent = new CustomEvent("onalertclosed", {
             bubbles: true,
             cancelable: true,
             composed: true,
@@ -109,6 +109,7 @@ class Alert extends HTMLElement {
         this.classList.add("hide");
     }
     connectedCallback() {
+        console.log("from connect callback.....")
         this.initialize()
     }
 
